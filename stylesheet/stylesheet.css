@@ -1,0 +1,60 @@
+html {
+height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@media (max-width: 800px) .nav-blocks {
+width: 100%; 
+}
+
+nav {
+height: 100%;
+}
+
+.nav-blocks {
+display: block;
+border: 1px solid black;
+background: cover; 
+height: 25%;
+}
+
+.game-block {
+display:block;
+overflow: hidden;
+background-color: red;
+height: 100%;
+}
+
+.how-to-block {
+display:block;
+overflow: hidden;
+background-color: blue;
+height: 100%;
+}
+
+.social-block {
+display:block;
+overflow: hidden;
+background-color: orange;
+height: 100%;
+}
+
+.feedback-block {
+display:block;
+overflow: hidden;
+background-color: green;
+height: 100%;
+}
+
+h2 {
+color:#FFF;
+position: relative;
+text-align: center;
+line-height: 100%;
+}
+
