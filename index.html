@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Hearts</title>
 	<link rel="stylesheet" href="stylesheet/stylesheet.css">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 
 
@@ -18,6 +19,9 @@
 	<nav>
 <!--	 after transition, display an image of cards (different suits) as hover effect.  
 Tab pane, Have arrow based drop down nav (mobile only). 
+
+For the social media, have a fixed icon at the bottom right of the screen, when hovered, shows all
+the different social media icons
 -->
 
 	<div class="nav-blocks">
@@ -47,13 +51,62 @@ Tab pane, Have arrow based drop down nav (mobile only).
 	
 	</nav>
 	
-	<section> 
 	
+	<main>
+	<section id="main-game"> 
+	
+			<img src="http://placekitten.com/500/400" alt="Hearts Game">
+
+	
+	<p> The game itself will be here... when finished in week 27 </p>
+	</section> 
+	</main> 
+
+	
+	<aside class="tab-container"> 
+	
+	<input id="how-tab" type="radio" name="tabs" checked>
+		<label for="how-tab"> 
+			<i class="fa fa-heart" aria-hidden="true"></i>
+				<span>How To</span>
+		</label>
+			
+	<input id="about-tab" type="radio" name="tabs" checked>
+		<label for="about-tab">
+			<i class="fa fa-heart" aria-hidden="true"></i>
+				<span>About</span>
+		</label>
+		
+	<input id="feedback-tab" type="radio" name="tabs" checked>
+		<label for="feedback-tab">
+			<i class="fa fa-commenting" aria-hidden="true"></i>
+				<span>Feedback</span>
+		</label>
+		
+	
+				
+	
+	<section id="how-to-section" class="tab-content"> 
+	<h3>How to Play Hearts</h3>
+	</section> 
+	
+	<section id="about-section" class="tab-content"> 
+	<h3>About</h3>
+	
+	    <figure>
+			<img src="http://placekitten.com/300/400" class="w3-circle" alt="Himatvir Singh">
+			<figcaption class="w3-opacity">Himatvir Singh - Game Developer</figcaption>
+        </figure>
+		
 	</section> 
 	
 	
+	<section id="feedback-section" class="tab-content"> 
+	<h3>Feedback</h3>
+	</section> 
 	
-
+	
+	</aside> 
 
 	<footer>
 	https://tympanus.net/Tutorials/OriginalHoverEffects/ 
