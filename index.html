@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Hearts</title>
 	<link rel="stylesheet" href="stylesheet/stylesheet.css">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 
 
@@ -18,6 +19,9 @@
 	<nav>
 <!--	 after transition, display an image of cards (different suits) as hover effect.  
 Tab pane, Have arrow based drop down nav (mobile only). 
+
+For the social media, have a fixed icon at the bottom right of the screen, when hovered, shows all
+the different social media icons
 -->
 
 	<div class="nav-blocks">
@@ -47,13 +51,124 @@ Tab pane, Have arrow based drop down nav (mobile only).
 	
 	</nav>
 	
-	<section> 
 	
+	<main>
+	<section id="main-game"> 
+	
+			<img src="http://placekitten.com/500/400" alt="Hearts Game">
+
+	
+	<p> The game itself will be here... when finished in week 27 </p>
+	</section> 
+	</main> 
+
+	
+	<aside class="tab-container"> 
+	
+	<input id="how-tab" type="radio" name="tabs" checked>
+		<label for="how-tab"> 
+			<i class="fa fa-heart" aria-hidden="true"></i>
+				<span>How To</span>
+		</label>
+			
+	<input id="about-tab" type="radio" name="tabs" checked>
+		<label for="about-tab">
+			<i class="fa fa-heart" aria-hidden="true"></i>
+				<span>About</span>
+		</label>
+		
+	<input id="feedback-tab" type="radio" name="tabs" checked>
+		<label for="feedback-tab">
+			<i class="fa fa-commenting" aria-hidden="true"></i>
+				<span>Feedback</span>
+		</label>
+		
+	
+				
+	
+	<section id="how-to-section" class="tab-content"> 
+	<h3>How to Play Hearts</h3>
+	
+	<h4>Cards</h4> 
+	<p>There are 52 cards used within this game (jokers are not included). This splits
+		deck into 13 cards for each suit (Spades, Clubs, Diamonds and Hears). The suit Heart
+		has a special effect.
+	</p>
+	
+	<h4>How the game works</h4> 
+	<p>The game is played in tricks; a trick is made of 4 players each putting down a card, 
+	this makes a total of 4 cards set in the middle of the table. The trick played is then given to the winner. 
+	The winner will add points to his score dependant on how many Hearts suit cards he has acquired and if  
+	they have acquired the Queen of Spades through the trick. If neither of the card types are won through the trick, 
+	the player's score stays the same.
+	</p>
+	
+	<ul> 
+	<li>Heart Card - 1 point</li>
+	<li>Queen of Spades - 13 points</li>
+	</ul>
+	
+	<h4>Shooting over the moon</h4>
+	<p>This is a special condition within the game that is triggered by a player obtaining all the Heart cards (13 in total) 
+	and the queen of spades through winning tricks. Instead of scoring 26, the player who has shot over the moon will score 
+	0 and all the opponents have 26 points added to their score. 
+	</p>
+	
+	<h4>Gameplay</h4> 
+	
+	<ol class="gameplay_list">
+	<li>Each player picks 3 cards and passes to the side (clockwise)</li>
+	<li>The player holding the 2 of clubs will start, if 2 has been removed: 3 of clubs will start</li>
+	</ol>
+	
+	<p class="rules">All players must follow the suit in each trick, if they do not have the suit cards, they can use 
+	different suit cards. However, for the first trick, if a player does not have a club card, they 
+	cannot play a heart or the queen of spades.
+	</p>
+	
+	<ol class="gameplay_list_2">
+	<li>Each player throws a card</li>
+	<li>A trick is full when it receives 1 card from each player</li>
+	<li>The player who threw the highest card in the trick wins</li>
+	</ol> 
+	
+	<p class="rules"> You can only win the trick if the thrown card's suit is the same as the one that started
+	the trick. Therefore the starting card is very important for strategy!
+	</p>
+	
+	<ol class="gameplay_list_3">
+	<li>The winner starts the next trick</li>
+	</ol>
+	
+	<p>Hearts may not be used until a heart or the queen of spades has been discarded through a player unable to 
+	play the required suit (Clubs, Diamonds and Spades).
+	</p>
+	
+	<ol class="gameplay_list_4">
+	<li>Repeat the process until you run out of cards</li>
+	<li>Winner is decided dependant on who has the lowest points</li> 
+	</ol>
+	</section> 
+	
+	<section id="about-section" class="tab-content"> 
+	<h3>About</h3>
+	
+	    <figure>
+			<img src="http://placekitten.com/300/400" class="w3-circle" alt="Himatvir Singh">
+			<figcaption class="w3-opacity">Himatvir Singh - Game Developer</figcaption>
+        </figure>
+		
+		<p>This information is classified</p>
 	</section> 
 	
 	
+	<section id="feedback-section" class="tab-content"> 
+	<h3>Feedback</h3>
+	<p>Don't want your feedback, just enjoy the game</p>
+	</section> 
 	
-
+	
+	</aside> 
 
 	<footer>
 	https://tympanus.net/Tutorials/OriginalHoverEffects/ 

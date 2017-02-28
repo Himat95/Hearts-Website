@@ -58,3 +58,60 @@ text-align: center;
 line-height: 100%;
 }
 
+
+
+img {
+display:block;
+
+}
+
+
+
+
+
+input, [id$="section"] {
+display: none; 
+clear:both; 
+}
+
+label {
+display:block;
+float:left; /* keeps the tabs vertical and not horiz */
+width: 33.33%;
+color: pink; /* the colour of the icons after click*/
+cursor: pointer; /*pointer style when hovered*/ 
+text-decoration: none;
+text-align: center;
+background: red;
+line-height: 3em;
+}
+
+#how-tab:checked ~ #how-to-section,
+#about-tab:checked ~ #about-section,
+#feedback-tab:checked ~ #feedback-section {
+  display: block;
+}
+
+[id$="tab"]:checked + label {
+  background: #fff;
+  color: #222;
+}
+
+[id$="tab"]:checked + label .fa {
+  color: #f69;
+}
+
+.tab-content {
+  background: #fff;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+
+.tab-container section * {
+  animation: fadeInScale 0.7s ease-in-out;
+}
+
+
