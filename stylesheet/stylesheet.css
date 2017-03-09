@@ -74,9 +74,10 @@ text-align: center;
 line-height: 100%;
 }
 
-#title {
+.title {
   text-align: center;
   color: rgba(100, 200, 0, 1);
+  padding-top: 5%;
 }
 
 
@@ -96,6 +97,8 @@ max-width: 100%;
 #main-game p {
   text-align: center;
 }
+
+
 
 
 
