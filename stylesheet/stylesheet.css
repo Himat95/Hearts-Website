@@ -18,7 +18,6 @@ height: 100%;
 
 .nav-blocks {
 display: block;
-border: 1px solid black;
 background: cover; 
 height: 25%;
 }
@@ -26,30 +25,47 @@ height: 25%;
 .game-block {
 display:block;
 overflow: hidden;
-background-color: red;
+background-color: rgba(242, 38, 19, 0.8); 
 height: 100%;
+}
+
+.game-block:hover {
+  background: rgba(242, 38, 19, 1); 
 }
 
 .how-to-block {
 display:block;
 overflow: hidden;
-background-color: blue;
+background-color: rgba(219, 10, 91, 0.8);
 height: 100%;
+}
+
+.how-to-block:hover {
+  background: rgba(219, 10, 91, 1); 
 }
 
 .social-block {
 display:block;
 overflow: hidden;
-background-color: orange;
+background-color: rgba(210, 82, 127, 0.8);
 height: 100%;
+}
+
+.social-block:hover {
+  background: rgba(210, 82, 127, 1); 
 }
 
 .feedback-block {
 display:block;
 overflow: hidden;
-background-color: green;
+background-color: rgba(246, 71, 71, 0.8);
 height: 100%;
 }
+
+.feedback-block:hover {
+  background: rgba(246, 71, 71, 1); 
+}
+
 
 h2 {
 color:#FFF;
@@ -58,11 +74,27 @@ text-align: center;
 line-height: 100%;
 }
 
+#title {
+  text-align: center;
+  color: rgba(100, 200, 0, 1);
+}
 
 
-img {
-display:block;
 
+#gamebox {
+display: block;
+margin: 0 auto;
+padding-top: 10%;
+max-width: 100%;
+}
+
+#main-game {
+  background: rgba(242, 38, 19, 0.8); 
+  padding-bottom: 10%; 
+}
+
+#main-game p {
+  text-align: center;
 }
 
 
