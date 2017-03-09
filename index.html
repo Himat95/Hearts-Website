@@ -37,9 +37,9 @@ the different social media icons
 	</div>
 	
 	<div class="nav-blocks">
-		<section class="social-block">
+		<section class="about-block">
 		
-			<h2>Social Media</h2>
+			<h2>About</h2>
 		</section> 
 	</div>
 	
@@ -66,19 +66,19 @@ the different social media icons
 	<aside class="tab-container"> 
 	
 	<input id="how-tab" type="radio" name="tabs" checked>
-		<label for="how-tab"> 
+		<label class="nav-tabs" for="how-tab"> 
 			<i class="fa fa-heart" aria-hidden="true"></i>
 				<span>How To</span>
 		</label>
 			
 	<input id="about-tab" type="radio" name="tabs" checked>
-		<label for="about-tab">
+		<label class="nav-tabs" for="about-tab">
 			<i class="fa fa-heart" aria-hidden="true"></i>
 				<span>About</span>
 		</label>
 		
 	<input id="feedback-tab" type="radio" name="tabs" checked>
-		<label for="feedback-tab">
+		<label class="nav-tabs" for="feedback-tab">
 			<i class="fa fa-commenting" aria-hidden="true"></i>
 				<span>Feedback</span>
 		</label>
@@ -158,13 +158,19 @@ the different social media icons
 			<img id="aboutimage" class="w3-circle" src=images/Mario.png alt="Himatvir Singh">
 			<figcaption class="w3-opacity">Himatvir Singh - Master Procrastinator</figcaption>
 			
-			<q id="quote">The night sky is full of dying stars. Its in their final <s>commits</s> moments,
+			<q>The night sky is full of dying stars. Its in their final <s>commits</s> moments,
 				they shine brightest.</q>
 			
 			<p id="aboutext">When selecting my final year project, i wanted to avoid the norm 
 				(making websites with sql database linked through php) and create something more 
 				fun. Thats why i made this website that i will link to a database in the near future
-				through the use of php. Oh and i also made a game. </p>
+				through the use of php. Oh and i also made a game.</p>
+
+			<p id="aboutgametext">The game itself is created using Java (imperative and declarative style).
+				It employs a powerful greedy heuristic algorthim that is capable of providing a challenging
+				game for casual players. Furthermore the game is fully concurrent and enables efficencey
+				by manipulating multiple cores. 
+			</p>
         </figure>
 		
 	</section> 
@@ -172,14 +178,65 @@ the different social media icons
 	
 	<section id="feedback-section" class="tab-content"> 
 	<h3 class="title">Feedback</h3>
+
+	<form>
+			<fieldset>
+				<legend>Game and Website Feedback</legend>
+
+				<label class="form" for"mail">Name:</label>
+				<input type="text" id="form-name" placeholder="Anon" required>
+
+			</fieldset>
+
+
+			<fieldset>
+				<label class="form" for"mail">Email:</label>
+				<input type="email" id="form-email" placeholder="name@domain.com" required>
+			</fieldset>
+
+			<fieldset>
+				<label class="form" for"mail">Gender:</label>
+				<input type="radio" name="form-gender" value="male"> Male
+				<input type="radio" name="form-gender" value="female"> Female
+				<input type="radio" name="form-gender" value="other"> Other
+			</fieldset>
+			
+			<fieldset>
+				<label class="form" for"mail">Date of birth:</label>
+				<input type="date" id="form-date" placeholder="01-01-2017">
+			</fieldset>
+
+			<fieldset>
+				<label class="from" for"mail">Game Difficulty:</label>
+				<meter id="mtr" value="50" min="0" max="100" optimum="50" low="10" high="90"> </meter>
+				Easy <input type="range" id="rng"
+							value="this.value=parseInt(this.value)"
+							onchange="run(this.value);"> Extremely Hard
+
+			</fieldset>
+
+			<fieldset>
+				<label class="form" for"mail">Comments</label>
+				<textarea>Enter text here</textarea>
+			</fieldset>
+
+			<fieldset>
+				<input type="reset" value="Reset">
+				<input type="submit" value="Submit">
+			</fieldset>
+	</form>
+
 	</section> 
 	
 	
 	</aside> 
 
+	<script src="javascript/form.js"> </script>
+
 	<footer>
 	https://tympanus.net/Tutorials/OriginalHoverEffects/ 
 	http://rileyjshaw.com/
+	http://www.flatuicolorpicker.com/
 	</footer>
 </body>
 

@@ -8,9 +8,6 @@ body {
   height: 100%;
 }
 
-@media (max-width: 800px) .nav-blocks {
-width: 100%; 
-}
 
 nav {
 height: 100%;
@@ -44,14 +41,14 @@ height: 100%;
   background: rgba(219, 10, 91, 1); 
 }
 
-.social-block {
+.about-block {
 display:block;
 overflow: hidden;
 background-color: rgba(210, 82, 127, 0.8);
 height: 100%;
 }
 
-.social-block:hover {
+.about-block:hover {
   background: rgba(210, 82, 127, 1); 
 }
 
@@ -72,6 +69,7 @@ color:#FFF;
 position: relative;
 text-align: center;
 line-height: 100%;
+top:40%;
 }
 
 .title {
@@ -98,18 +96,32 @@ max-width: 100%;
   text-align: center;
 }
 
+q {
+  color: rgba(100, 288, 250, 1);
+}
+
+
+#how-to-section {
+  background-color: rgba(219, 10, 91, 0.8);
+}
+
+#about-section {
+  background-color: rgba(210, 82, 127, 0.8);
+}
+
+#feedback-section {
+  background-color: rgba(246, 71, 71, 0.8);
+}
 
 
 
-
-
-
-input, [id$="section"] {
+/* hides the aside tabs (how2,about,feed) and the sections */
+[id$="tab"], [id$="section"] {
 display: none; 
 clear:both; 
 }
 
-label {
+.nav-tabs {
 display:block;
 float:left; /* keeps the tabs vertical and not horiz */
 width: 33.33%;
