@@ -7,6 +7,10 @@
 	<link rel="stylesheet" href="stylesheet/stylesheet.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="javascript/form.js"> </script>
+	<script src="javascript/smoothscroll.js"> </script>
 </head>
 
 
@@ -26,26 +30,25 @@ the different social media icons
 
 	<div class="nav-blocks">
 		<section class="game-block">
-			<h2>Game</h2>
+			<a href="#main-game">Game</a>
 		</section> 
 	</div>
 	
 	<div class="nav-blocks">
 		<section class="how-to-block">
-			<h2>How to Play</h2>
+			<a href="#how-to-section">How to Play</a>
 		</section> 
 	</div>
 	
 	<div class="nav-blocks">
 		<section class="about-block">
-		
-			<h2>About</h2>
+			<a href="#about-section">About</a>
 		</section> 
 	</div>
 	
 	<div class="nav-blocks">
 		<section class="feedback-block">
-			<h2>Feedback</h2>
+			<a href="#feedback-section">Feedback</a>
 		<section> 
 	</div>
 	
@@ -71,13 +74,13 @@ the different social media icons
 				<span>How To</span>
 		</label>
 			
-	<input id="about-tab" type="radio" name="tabs" checked>
+	<input id="about-tab" type="radio" name="tabs">
 		<label class="nav-tabs" for="about-tab">
 			<i class="fa fa-heart" aria-hidden="true"></i>
 				<span>About</span>
 		</label>
 		
-	<input id="feedback-tab" type="radio" name="tabs" checked>
+	<input id="feedback-tab" type="radio" name="tabs">
 		<label class="nav-tabs" for="feedback-tab">
 			<i class="fa fa-commenting" aria-hidden="true"></i>
 				<span>Feedback</span>
@@ -188,7 +191,6 @@ the different social media icons
 
 			</fieldset>
 
-
 			<fieldset>
 				<label class="form" for"mail">Email:</label>
 				<input type="email" id="form-email" placeholder="name@domain.com" required>
@@ -212,7 +214,6 @@ the different social media icons
 				Easy <input type="range" id="rng"
 							value="this.value=parseInt(this.value)"
 							onchange="run(this.value);"> Extremely Hard
-
 			</fieldset>
 
 			<fieldset>
@@ -231,7 +232,7 @@ the different social media icons
 	
 	</aside> 
 
-	<script src="javascript/form.js"> </script>
+
 
 	<footer>
 	https://tympanus.net/Tutorials/OriginalHoverEffects/ 
