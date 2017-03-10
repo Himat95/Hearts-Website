@@ -16,234 +16,267 @@
 
 
 <body>
-	<header>
-	
-	</header>
 	
 	<nav>
-<!--	 after transition, display an image of cards (different suits) as hover effect.  
-Tab pane, Have arrow based drop down nav (mobile only). 
 
-For the social media, have a fixed icon at the bottom right of the screen, when hovered, shows all
-the different social media icons
--->
+		<div class="nav-blocks" href="#main-game">
+			<section class="game-block">
+				<a href="#main-game" class="main-nav">Game</a>
+			</section> 
+		</div>
+	
 
-	<div class="nav-blocks">
-		<section class="game-block">
-			<a href="#main-game" class="main-nav">Game</a>
-		</section> 
-	</div>
+		<div class="nav-blocks">
+			<section class="how-to-block">
+				<a href="#how-to-section" class="main-nav">How to Play</a>
+			</section> 
+		</div>
 	
-	<div class="nav-blocks">
-		<section class="how-to-block">
-			<a href="#how-to-section" class="main-nav">How to Play</a>
-		</section> 
-	</div>
+
+		<div class="nav-blocks">
+			<section class="about-block">
+				<a href="#about-section" class="main-nav">About</a>
+			</section> 
+		</div>
 	
-	<div class="nav-blocks">
-		<section class="about-block">
-			<a href="#about-section" class="main-nav">About</a>
-		</section> 
-	</div>
-	
-	<div class="nav-blocks">
-		<section class="feedback-block">
-			<a href="#feedback-section" class="main-nav">Feedback</a>
-		<section> 
-	</div>
+
+		<div class="nav-blocks">
+			<section class="feedback-block">
+				<a href="#feedback-section" class="main-nav">Feedback</a>
+			<section> 
+		</div>
 	
 	</nav>
 	
+
 	
 	<main>
-	<section id="main-game"> 
+
+		<section id="main-game"> 
 	
 			<img id="gamebox" src="http://placekitten.com/500/400" alt="Hearts Game">
 
-	
-	<p> The game will be here when finished in week 27. For now, have a kitten. </p>
-	</section> 
+			<p> The game will be here when finished in week 27. For now, have a kitten. </p>
+
+		</section> 
+
 	</main> 
 
-	
+
+
 	<aside class="tab-container"> 
 	
-	<input id="how-tab" type="radio" name="tabs" checked>
-		<label class="nav-tabs" for="how-tab"> 
-			<i class="fa fa-heart" aria-hidden="true"></i>
-				<span>How To</span>
-		</label>
+		<input id="how-tab" type="radio" name="tabs" checked>
+			<label class="nav-tabs" for="how-tab"> 
+				<i class="fa fa-heart" aria-hidden="true"></i>
+					<span>How To</span>
+			</label>
 			
-	<input id="about-tab" type="radio" name="tabs">
-		<label class="nav-tabs" for="about-tab">
-			<i class="fa fa-child" aria-hidden="true"></i>
-				<span>About</span>
-		</label>
+
+		<input id="about-tab" type="radio" name="tabs">
+			<label class="nav-tabs" for="about-tab">
+				<i class="fa fa-child" aria-hidden="true"></i>
+					<span>About</span>
+			</label>
 		
-	<input id="feedback-tab" type="radio" name="tabs">
-		<label class="nav-tabs" for="feedback-tab">
-			<i class="fa fa-commenting" aria-hidden="true"></i>
-				<span>Feedback</span>
+
+		<input id="feedback-tab" type="radio" name="tabs">
+			<label class="nav-tabs" for="feedback-tab">
+				<i class="fa fa-commenting" aria-hidden="true"></i>
+					<span>Feedback</span>
 		</label>
 		
 	
 				
 	
-	<section id="how-to-section" class="tab-content"> 
-	<h3 class="title">How to Play Hearts</h3>
+		<section id="how-to-section" class="tab-content"> 
+			<h3 class="title">How to Play Hearts</h3>
 	
-	<h4 class="about-title">Cards</h4> 
-	<p>There are 52 cards used within this game (jokers are not included). This splits
-		deck into 13 cards for each suit (Spades, Clubs, Diamonds and Hears). The suit Heart
-		has a special effect.
-	</p>
+				<h4 class="about-title">Cards</h4> 
+					<p>There are 52 cards used within this game (jokers are not included). This splits
+						deck into 13 cards for each suit (Spades, Clubs, Diamonds and Hears). The suit Heart
+						has a special effect.
+					</p>
 	
-	<h4 class="about-title">How the game works</h4> 
-	<p>The game is played in tricks; a trick is made of 4 players each putting down a card, 
-	this makes a total of 4 cards set in the middle of the table. The trick played is then given to the winner. 
-	The winner will add points to his score dependant on how many Hearts suit cards he has acquired and if  
-	they have acquired the Queen of Spades through the trick. If neither of the card types are won through the trick, 
-	the player's score stays the same.
-	</p>
-	
-	<ul> 
-	<li>Heart Card - 1 point</li>
-	<li>Queen of Spades - 13 points</li>
-	</ul>
-	
-	<h4 class="about-title">Shooting over the moon</h4>
-	<p>This is a special condition within the game that is triggered by a player obtaining all the Heart cards (13 in total) 
-	and the queen of spades through winning tricks. Instead of scoring 26, the player who has shot over the moon will score 
-	0 and all the opponents have 26 points added to their score. 
-	</p>
-	
-	<h4 class="about-title">Gameplay</h4> 
-	
-	<ol class="step-list">
-	<li>Each player picks 3 cards and passes to the side (clockwise)</li>
-	<li>The player holding the 2 of clubs will start, if 2 has been removed: 3 of clubs will start</li>
-	</ol>
-	
-	<p class="rules">All players must follow the suit in each trick, if they do not have the suit cards, they can use 
-	different suit cards. However, for the first trick, if a player does not have a club card, they 
-	cannot play a heart or the queen of spades.
-	</p>
-	
-	<ol class="step-list2">
-	<li>Each player throws a card</li>
-	<li>A trick is full when it receives 1 card from each player</li>
-	<li>The player who threw the highest card in the trick wins</li>
-	</ol> 
-	
-	<p class="rules"> You can only win the trick if the thrown card's suit is the same as the one that started
-	the trick. Therefore the starting card is very important for strategy!
-	</p>
-	
-	<ol class="step-list3">
-	<li>The winner starts the next trick</li>
-	</ol>
-	
-	<p>Hearts may not be used until a heart or the queen of spades has been discarded through a player unable to 
-	play the required suit (Clubs, Diamonds and Spades).
-	</p>
-	
-	<ol class="step-list4">
-	<li>Repeat the process until you run out of cards</li>
-	<li>Winner is decided dependant on who has the lowest points</li> 
-	</ol>
 
-	</section> 
+				<h4 class="about-title">How the game works</h4> 
+					<p>The game is played in tricks; a trick is made of 4 players each putting down a card, 
+						this makes a total of 4 cards set in the middle of the table. The trick played is then given to the winner. 
+						The winner will add points to his score dependant on how many Hearts suit cards he has acquired and if  
+						they have acquired the Queen of Spades through the trick. If neither of the card types are won through the trick, 
+						the player's score stays the same.
+					</p>
 	
-	<section id="about-section" class="tab-content"> 
-	<h3 class="title">About</h3>
+
+					<ul> 
+						<li>Heart Card - 1 point</li>
+						<li>Queen of Spades - 13 points</li>
+					</ul>
 	
-	    <figure>
-			<img id="aboutimage" class="w3-round-xxlarge" src=images/Mario.png alt="Himatvir Singh">
-			<figcaption class="w3-opacity">Himatvir Singh - Master Procrastinator</figcaption>
-			
-			<q>The night sky is full of dying stars. Its in their final <s>commits</s> moments,
+
+
+				<h4 class="about-title">Shooting over the moon</h4>
+					<p>This is a special condition within the game that is triggered by a player obtaining all the Heart cards (13 in total) 
+						and the queen of spades through winning tricks. Instead of scoring 26, the player who has shot over the moon will score 
+						0 and all the opponents have 26 points added to their score. 
+					</p>
+	
+
+
+
+				<h4 class="about-title">Gameplay</h4> 
+	
+					<ol class="step-list">
+						<li>Each player picks 3 cards and passes to the side (clockwise)</li>
+						<li>The player holding the 2 of clubs will start, if 2 has been removed: 3 of clubs will start</li>
+					</ol>
+	
+
+					<p class="rules">All players must follow the suit in each trick, if they do not have the suit cards, they can use 
+					different suit cards. However, for the first trick, if a player does not have a club card, they 
+					cannot play a heart or the queen of spades.
+					</p>
+	
+
+					<ol class="step-list2">
+						<li>Each player throws a card</li>
+						<li>A trick is full when it receives 1 card from each player</li>
+						<li>The player who threw the highest card in the trick wins</li>
+					</ol> 
+	
+
+					<p class="rules"> You can only win the trick if the thrown card's suit is the same as the one that started
+					the trick. Therefore the starting card is very important for strategy!
+					</p>
+	
+
+					<ol class="step-list3">
+						<li>The winner starts the next trick</li>
+					</ol>
+	
+
+					<p>Hearts may not be used until a heart or the queen of spades has been discarded through a player unable to 
+					play the required suit (Clubs, Diamonds and Spades).
+					</p>
+	
+
+					<ol class="step-list4">
+						<li>Repeat the process until you run out of cards</li>
+						<li>Winner is decided dependant on who has the lowest points</li> 
+					</ol>
+
+		</section> 
+	
+
+
+		<section id="about-section" class="tab-content"> 
+			<h3 class="title">About</h3>
+	
+	 		   <figure>
+					<img id="aboutimage" class="w3-round-xxlarge" src=images/Mario.png alt="Himatvir Singh">
+					<figcaption class="w3-opacity">Himatvir Singh - Master Procrastinator</figcaption>
+				</figure>
+
+				<q>The night sky is full of dying stars. Its in their final <s>commits</s> moments,
 				 they shine brightest.</q>
 			
-			<p class="about-text">When selecting my final year project, i wanted to avoid the norm whom
+
+				<p class="about-text">When selecting my final year project, i wanted to avoid the norm whom
 				created websites with a sql database linked through php, and create something more 
 				fun. Thats why i made this website that i will link to a database in the near future
-				through the use of php...</p>
+				through the use of php...
+				</p>
 
-			<p class="about-text">Oh and i also made a game! The game itself is created using Java. 
+
+				<p class="about-text">Oh and i also made a game! The game itself is created using Java. 
 				It employs a powerful greedy heuristic algorithm  
 				that is capable of providing a challenging  game for casual players. Furthermore the 
 				game is fully concurrent and enables efficiency	by manipulating multiple cores. 
-			</p>
+				</p>
 
-			<p class="about-text">This website wasn't only made to showcase the game but to allow a place
+
+				<p class="about-text">This website wasn't only made to showcase the game but to allow a place
 				for people to play for free. Further work will be done on making the game multiplayer and
 				i plan to use this website as the host for this event. Ending note, what does a
-				 haskell compiler and my brain have in common... <span id="joke">We are both lazy.</span> 
-			</p>
-        </figure>
-		
-	</section> 
+				haskell compiler and my brain have in common... <span id="joke">We are both lazy.</span> 
+				</p>
+        
+
+		</section> 
 	
 	
-	<section id="feedback-section" class="tab-content"> 
-	<h3 class="title">Feedback</h3>
 
-	<form>
-			<fieldset>
-				<legend>Game and Website Feedback</legend>
+		<section id="feedback-section" class="tab-content"> 
+			<h3 class="title">Feedback</h3>
 
-				<label class="form" for"mail">Name:</label>
-				<input type="text" id="form-name" placeholder="Anon" required>
+				<form>
+					<fieldset>
+						<legend>Game and Website Feedback</legend>
 
-			</fieldset>
+							<label class="form" for"mail">Name:</label>
 
-			<fieldset>
-				<label class="form" for"mail">Email:</label>
-				<input type="email" id="form-email" placeholder="name@domain.com" required>
-			</fieldset>
+							<input type="text" id="form-name" placeholder="Anon" required>
 
-			<fieldset>
-				<label class="form" for"mail">Gender:</label>
-				<input type="radio" name="form-gender" value="male"> Male
-				<input type="radio" name="form-gender" value="female"> Female
-				<input type="radio" name="form-gender" value="other"> Other
-			</fieldset>
+					</fieldset>
+
+
+					<fieldset>
+						<label class="form" for"mail">Email:</label>
+
+						<input type="email" id="form-email" placeholder="name@domain.com" required>
+					</fieldset>
+
+
+					<fieldset>
+						<label class="form" for"mail">Gender:</label>
+
+						<input type="radio" name="form-gender" value="male"> Male
+						<input type="radio" name="form-gender" value="female"> Female
+						<input type="radio" name="form-gender" value="other"> Other
+					</fieldset>
 			
-			<fieldset>
-				<label class="form" for"mail">Date of birth:</label>
-				<input type="date" id="form-date" placeholder="01-01-2017">
-			</fieldset>
 
-			<fieldset>
-				<label class="from" for"mail">Game Difficulty:</label>
-				<meter id="mtr" value="50" min="0" max="100" optimum="50" low="10" high="90"> </meter>
-				Easy <input type="range" id="rng"
+					<fieldset>
+						<label class="form" for"mail">Date of birth:</label>
+
+						<input type="date" id="form-date" placeholder="01-01-2017">
+					</fieldset>
+
+
+					<fieldset>
+						<label class="from" for"mail">Game Difficulty:</label>
+
+						<meter id="mtr" value="50" min="0" max="100" optimum="50" low="10" high="90"> </meter>
+
+						Easy <input type="range" id="rng"
 							value="this.value=parseInt(this.value)"
 							onchange="run(this.value);"> Extremely Hard
-			</fieldset>
+					</fieldset>
 
-			<fieldset>
-				<label class="form" for"mail">Comments</label>
-				<textarea>Enter text here</textarea>
-			</fieldset>
 
-			<fieldset>
-				<input type="reset" value="Reset">
-				<input type="submit" value="Submit">
-			</fieldset>
-	</form>
+					<fieldset>
+						<label class="form" for"mail">Comments</label>
+						<textarea>Enter text here</textarea>
+					</fieldset>
 
-	</section> 
+					<fieldset>
+						<input type="reset" value="Reset">
+						<input type="submit" value="Submit">
+					</fieldset>
+
+
+				</form>
+
+		</section> 
 	
 	
 	</aside> 
 
 
-
 	<footer>
-	https://tympanus.net/Tutorials/OriginalHoverEffects/ 
-	http://rileyjshaw.com/
-	http://www.flatuicolorpicker.com/
+		https://tympanus.net/Tutorials/OriginalHoverEffects/ 
+		http://rileyjshaw.com/
+		http://www.flatuicolorpicker.com/
 	</footer>
 </body>
 

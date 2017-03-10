@@ -1,13 +1,11 @@
 html {
 height: 100%;
-
 }
 
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-
 }
 
 nav {
@@ -18,6 +16,10 @@ height: 100%;
 display: block;
 background: cover; 
 height: 25%;
+}
+
+.nav-blocks:hover {
+  cursor: pointer;
 }
 
 .game-block {
@@ -67,13 +69,14 @@ height: 100%;
 
 .main-nav {
 color:#FFF;
-display: inline-block;
+display: block;
 position: relative;
 text-align: center;
 text-decoration: none;
 font-size: 200%; 
-line-height: 100%;
 top:40%;
+width: 100%;
+height: 60%;
 font-weight: bold;
 }
 
@@ -241,4 +244,12 @@ line-height: 3em;
 .step-list4 li::before{
   content: counter(mylists) ". ";
   counter-increment: mylists;
+}
+
+form {
+  border: solid white 5px;
+}
+
+footer {
+  background-color: purple;
 }
