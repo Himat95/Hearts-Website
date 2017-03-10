@@ -134,7 +134,15 @@ max-width: 100%;
 }
 
 q {
-  color: rgba(100, 288, 250, 1);
+  color: rebeccapurple;
+  font-weight: bold;
+  background: rgba(255, 229, 229, 1);
+}
+
+.about-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 0.3%;
 }
 
 
@@ -194,7 +202,22 @@ line-height: 3em;
   margin-right: 10px;
 }
 
+#joke {
+  background: red;
+  color: transparent;
+}
 
+ #joke:active {
+   background: rgba(210, 82, 127, 0.8); 
+  color: white;
+  cursor: none;
+ }
+
+#joke:hover{
+   background: rgba(210, 82, 127, 0.8); 
+  color: white;
+  cursor: none;
+}
 
 .step-list{
   counter-reset: mylists;
