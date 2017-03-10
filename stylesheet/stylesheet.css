@@ -8,6 +8,7 @@ body {
   height: 100%;
 }
 
+/*<--------------------------------------Navigation---------------------------------------->*/
 nav {
 height: 100%;
 }
@@ -66,7 +67,6 @@ height: 100%;
   background: rgba(246, 71, 71, 1); 
 }
 
-
 .main-nav {
 color:#FFF;
 display: block;
@@ -80,46 +80,7 @@ height: 60%;
 font-weight: bold;
 }
 
-.title {
-  text-align: center;
-  color: white;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-p {
-  color: white;
-  font-weight: lighter;
-  word-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 2%;
-}
-
-ul li{
-  color: white;
-  font-weight: lighter;
-}
-
-ol li{
-  background: rgba(255 , 229, 229, 0.8);
-  padding: 1%;
-  margin-left: 2%;
-  color: darkred;
-  font-weight: bold;
-    list-style-type: none;
-}
-
-.about-title {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 2%;
-  color: white;
-  padding-top: 5%;
-  font-weight: bold;
-}
-
-
+/*<--------------------------------------Main---------------------------------------->*/
 #gamebox {
 display: block;
 margin: 0 auto;
@@ -136,32 +97,11 @@ max-width: 100%;
   text-align: center;
 }
 
-q {
-  color: rebeccapurple;
-  font-weight: bold;
-  background: rgba(255, 229, 229, 1);
-}
 
-.about-text{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-left: 0.3%;
-}
+/*<--------------------------------------Aside---------------------------------------->*/
 
 
-#how-to-section {
-  background-color: rgba(219, 10, 91, 0.8);
-}
-
-#about-section {
-  background-color: rgba(210, 82, 127, 0.8);
-}
-
-#feedback-section {
-  background-color: rgba(246, 71, 71, 0.8);
-}
-
-
+/*<--------------------------------------Aside Tabs---------------------------------------->*/
 
 /* hides the aside tabs (how2,about,feed) and the sections */
 [id$="tab"], [id$="section"] {
@@ -204,22 +144,59 @@ line-height: 3em;
 .fa {
   margin-right: 10px;
 }
+/*<--------------------------------------Global---------------------------------------->*/
 
-#joke {
-  background: red;
-  color: transparent;
+#how-to-section {
+  background-color: rgba(219, 10, 91, 0.8);
 }
 
- #joke:active {
-   background: rgba(210, 82, 127, 0.8); 
-  color: white;
-  cursor: none;
- }
+#about-section {
+  background-color: rgba(210, 82, 127, 0.8);
+}
 
-#joke:hover{
-   background: rgba(210, 82, 127, 0.8); 
+#feedback-section {
+  background-color: rgba(246, 71, 71, 0.8);
+}
+
+.title {
+  text-align: center;
   color: white;
-  cursor: none;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
+  word-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+}
+
+
+/*<--------------------------------------How to---------------------------------------->*/
+.how2-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+  color: white;
+  padding-top: 5%;
+  font-weight: bold;
+}
+
+ul li{
+  color: white;
+  font-weight: lighter;
+}
+
+ol li{
+  background: rgba(255 , 229, 229, 0.8);
+  padding: 1%;
+  margin-left: 2%;
+  color: darkred;
+  font-weight: bold;
+    list-style-type: none;
 }
 
 .step-list{
@@ -246,10 +223,55 @@ line-height: 3em;
   counter-increment: mylists;
 }
 
+
+
+/*<--------------------------------------About---------------------------------------->*/
+
+
+q {
+  color: rebeccapurple;
+  font-weight: bold;
+  background: rgba(255, 229, 229, 1);
+}
+
+.about-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 0.3%;
+}
+
+
+#joke {
+  background: red;
+  color: transparent;
+}
+
+ #joke:active {
+   background: rgba(210, 82, 127, 0.8); 
+  color: white;
+  cursor: none;
+ }
+
+#joke:hover{
+   background: rgba(210, 82, 127, 0.8); 
+  color: white;
+  cursor: none;
+}
+
+
+/*<--------------------------------------Feedback---------------------------------------->*/
+
 form {
   border: solid white 5px;
 }
 
+
+/*<--------------------------------------Rest---------------------------------------->*/
 footer {
   background-color: purple;
 }
+
+
+
+
+
