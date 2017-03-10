@@ -9,47 +9,48 @@
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="javascript/form.js"> </script>
+<!--<script src="javascript/form.js"> </script> -->
 	<script src="javascript/smoothscroll.js"> </script>
 </head>
 
 
 
+
 <body>
-	
+	<!-- Main navigation control -->
 	<nav>
 
 		<div class="nav-blocks" href="#main-game">
 			<section class="game-block">
-				<a href="#main-game" class="main-nav">Game</a>
+				<a href="#main-game" class="main-nav" >Game</a>
 			</section> 
 		</div>
 	
 
 		<div class="nav-blocks">
 			<section class="how-to-block">
-				<a href="#how-to-section" class="main-nav">How to Play</a>
+				<a href="#how-to-section" class="main-nav n" data="how-tab">How to Play</a>
 			</section> 
 		</div>
 	
 
 		<div class="nav-blocks">
 			<section class="about-block">
-				<a href="#about-section" class="main-nav">About</a>
+				<a href="#about-section" class="main-nav n" data="about-tab">About</a>
 			</section> 
 		</div>
 	
 
 		<div class="nav-blocks">
 			<section class="feedback-block">
-				<a href="#feedback-section" class="main-nav">Feedback</a>
+				<a href="#feedback-section" class="main-nav n " data="feedback-tab">Feedback</a>
 			<section> 
 		</div>
 	
 	</nav>
 	
 
-	
+		<!-- Game section -->
 	<main>
 
 		<section id="main-game"> 
@@ -64,7 +65,7 @@
 	</main> 
 
 
-
+		<!-- Tabs navigation -->
 	<aside class="tab-container"> 
 	
 		<input id="how-tab" type="radio" name="tabs" checked>
@@ -206,7 +207,7 @@
 		</section> 
 	
 	
-
+	<!-- Ran out of time to finish JS for form  -->
 		<section id="feedback-section" class="tab-content"> 
 			<h3 class="title">Feedback</h3>
 
@@ -244,7 +245,8 @@
 					</fieldset>
 
 
-					<fieldset>
+						<!-- Broken connection between range and meter, therefore not used -->
+<!--				<fieldset>
 						<label class="from" for"mail">Game Difficulty:</label>
 
 						<meter id="mtr" value="50" min="0" max="100" optimum="50" low="10" high="90"> </meter>
@@ -253,7 +255,7 @@
 							value="this.value=parseInt(this.value)"
 							onchange="run(this.value);"> Extremely Hard
 					</fieldset>
-
+-->
 
 					<fieldset>
 						<label class="form" for"mail">Comments</label>
@@ -275,7 +277,7 @@
 
 
 	<footer>
-		https://tympanus.net/Tutorials/OriginalHoverEffects/ 
+		https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 		http://rileyjshaw.com/
 		http://www.flatuicolorpicker.com/
 	</footer>
