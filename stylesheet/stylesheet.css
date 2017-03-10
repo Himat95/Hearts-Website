@@ -1,11 +1,13 @@
 html {
 height: 100%;
+
 }
 
 body {
   margin: 0;
   padding: 0;
   height: 100%;
+
 }
 
 nav {
@@ -63,21 +65,56 @@ height: 100%;
 }
 
 
-a {
+.main-nav {
 color:#FFF;
+display: inline-block;
 position: relative;
 text-align: center;
+text-decoration: none;
+font-size: 200%; 
 line-height: 100%;
 top:40%;
-
+font-weight: bold;
 }
 
 .title {
   text-align: center;
-  color: rgba(100, 200, 0, 1);
+  color: white;
   padding-top: 5%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
+p {
+  color: white;
+  font-weight: lighter;
+  word-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+}
+
+ul li{
+  color: white;
+  font-weight: lighter;
+}
+
+ol li{
+  background: rgba(255 , 229, 229, 0.8);
+  padding: 1%;
+  margin-left: 2%;
+  color: darkred;
+  font-weight: bold;
+    list-style-type: none;
+}
+
+.about-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+  color: white;
+  padding-top: 5%;
+  font-weight: bold;
+}
 
 
 #gamebox {
@@ -125,11 +162,11 @@ clear:both;
 display:block;
 float:left; /* keeps the tabs vertical and not horiz */
 width: 33.33%;
-color: pink; /* the colour of the icons after click*/
+color: white; /* the colour of the icons after click*/
 cursor: pointer; /*pointer style when hovered*/ 
 text-decoration: none;
 text-align: center;
-background: red;
+background: darkviolet;
 line-height: 3em;
 }
 
@@ -140,25 +177,45 @@ line-height: 3em;
 }
 
 [id$="tab"]:checked + label {
-  background: #fff;
+  background: violet;
   color: #222;
 }
 
 [id$="tab"]:checked + label .fa {
-  color: #f69;
+  color: rgba(255, 0, 0, 1);
 }
 
 .tab-content {
   background: #fff;
 }
 
+
 .fa {
   margin-right: 10px;
 }
 
 
-.tab-container section * {
-  animation: fadeInScale 0.7s ease-in-out;
+
+.step-list{
+  counter-reset: mylists;
 }
 
+.step-list li::before {
+  content: counter(mylists) ". ";
+  counter-increment: mylists;
+}
 
+.step-list2 li::before{
+  content: counter(mylists) ". ";
+  counter-increment: mylists;
+}
+
+.step-list3 li::before{
+  content: counter(mylists) ". ";
+  counter-increment: mylists;
+}
+
+.step-list4 li::before{
+  content: counter(mylists) ". ";
+  counter-increment: mylists;
+}
