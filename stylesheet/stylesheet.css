@@ -1,93 +1,68 @@
-html {
-height: 100%;
+
+html, body {
+  width: 100%;
+  background-color: cyan;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  height: 100%;
+  padding: 0 20%;
 }
+
 
 /*<--------------------------------------Navigation---------------------------------------->*/
-nav {
-height: 100%;
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(210, 82, 127, 1);
+  position: fixed;
+  width: 60%;
 }
 
-.nav-blocks {
-display: block;
-background: cover; 
-height: 25%;
-}
-
-.nav-blocks:hover {
-  cursor: pointer;
-}
-
-.game-block {
-position:relative;
-display:block;
-overflow: hidden;
-background-color: rgba(242, 38, 19, 0.8); 
-height: 100%;
-}
-
-.game-block:hover {
-  background: rgba(242, 38, 19, 1); 
-}
-
-.how-to-block {
-position:relative;
-display:block;
-overflow: hidden;
-background-color: rgba(219, 10, 91, 0.8);
-height: 100%;
-}
-
-.how-to-block:hover {
-  background: rgba(219, 10, 91, 1); 
-}
-
-.about-block {
-position:relative;
-display:block;
-overflow: hidden;
-background-color: rgba(210, 82, 127, 0.8);
-height: 100%;
-}
-
-.about-block:hover {
-  background: rgba(210, 82, 127, 1); 
-}
-
-.feedback-block {
-position:relative;
-display:block;
-overflow: hidden;
-background-color: rgba(246, 71, 71, 0.8);
-height: 100%;
-}
-
-.feedback-block:hover {
-  background: rgba(246, 71, 71, 1); 
+.navli {
+  float: left;
+  width: 25%
 }
 
 .main-nav {
 color:#FFF;
-margin 0;
 display: block;
 text-align: center;
 text-decoration: none;
-font-size: 200%; 
-width: 100%;
-height: 100%;
+font-size: 100%; 
 font-weight: bold;
-position: absolute;
-padding-top: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+padding: 15px 15px;
 }
 
+.main-nav:hover {
+background-color: rgba(219, 10, 91, 0.8);
+}
+
+
+
 /*<--------------------------------------Main---------------------------------------->*/
+
+#download {
+  animation-duration: 10s;
+  animation-iteration-count: infinite; 
+  animation-name: rainbow; 
+  text-decoration: none;
+  font-size: 170%;
+}
+
+@keyframes rainbow {
+  0%  {color: red;}
+  14.2%  {color: orange;}
+  28.4%  {color: yellow;}
+  42.6%  {color: green;}
+  56.8%  {color: blue;}
+  71%  {color: indigo;}
+  85.2%  {color: violet;}
+  100%  {color: red;}
+}
 
 #gamebox {
 display: block;
@@ -99,66 +74,15 @@ height: auto;
 
 #main-game {
   background: rgba(242, 38, 19, 0.8); 
-  padding-bottom: 10%; 
+  padding-bottom: 10%;
+  padding-top: 10%; 
 }
 
 #main-game p {
   text-align: center;
 }
 
-#gamecontainer {
-  max-width: 90%;
-  margin-left: 5%;
-  height: 100%;
-}
 
-
-/*<--------------------------------------Aside---------------------------------------->*/
-
-
-/*<--------------------------------------Aside Tabs---------------------------------------->*/
-
-/* hides the aside tabs (how2,about,feed) and the sections */
-[id$="tab"], [id$="section"] {
-display: none; 
-clear:both; 
-}
-
-.nav-tabs {
-display:block;
-float:left; /* keeps the tabs vertical and not horiz */
-width: 33.33%;
-color: white; /* the colour of the icons after click*/
-cursor: pointer; /*pointer style when hovered*/ 
-text-decoration: none;
-text-align: center;
-background: darkviolet;
-line-height: 3em;
-}
-
-#how-tab:checked ~ #how-to-section,
-#about-tab:checked ~ #about-section,
-#feedback-tab:checked ~ #feedback-section {
-  display: block;
-}
-
-[id$="tab"]:checked + label {
-  background: violet;
-  color: #222;
-}
-
-[id$="tab"]:checked + label .fa {
-  color: rgba(255, 0, 0, 1);
-}
-
-.tab-content {
-  background: #fff;
-}
-
-
-.fa {
-  margin-right: 10px;
-}
 /*<--------------------------------------Global---------------------------------------->*/
 
 #how-to-section {
@@ -388,6 +312,7 @@ q {
 
 }
 
+/*
 @media only screen and (min-width : 1824px) {
 
 .how2-title {
@@ -422,3 +347,5 @@ q {
 
 
 }
+
+*/
