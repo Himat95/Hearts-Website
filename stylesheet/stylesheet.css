@@ -1,6 +1,6 @@
 
 html, body {
-  background-color: cyan;
+  background-color: rgb(191, 101, 226);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 .navli {
   float: left;
-  width: 25%
+  width: 33.33%;
 }
 
 .main-nav {
@@ -37,7 +37,8 @@ padding: 15px 15px;
 }
 
 .main-nav:hover {
-background-color: rgba(219, 10, 91, 0.8);
+/* color: rgb(255, 229, 79); */
+background-color: rgb(255, 0, 242);
 }
 
 
@@ -52,15 +53,16 @@ background-color: rgba(219, 10, 91, 0.8);
   font-size: 170%;
 }
 
+
 @keyframes rainbow {
-  0%  {color: red;}
+  0%     {color: red;}
   14.2%  {color: orange;}
   28.4%  {color: yellow;}
   42.6%  {color: green;}
   56.8%  {color: blue;}
-  71%  {color: indigo;}
+  71%    {color: indigo;}
   85.2%  {color: violet;}
-  100%  {color: red;}
+  100%   {color: red;}
 }
 
 #gamebox {
@@ -197,19 +199,8 @@ q {
 }
 
 
-/*<--------------------------------------Feedback---------------------------------------->*/
 
-form {
-  border: solid white 5px;
-}
-
-
-/*<--------------------------------------Rest---------------------------------------->*/
-footer {
-  background-color: purple;
-  color: white;
-}
-
+/*<------------------------------------Sizes------------------------------------------>*/
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
