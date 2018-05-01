@@ -1,6 +1,6 @@
 
 html, body {
-  background-color: rgb(191, 101, 226);
+  background-color: rgb(253, 221, 253);
 }
 
 body {
@@ -46,11 +46,14 @@ background-color: rgb(255, 0, 242);
 /*<--------------------------------------Main---------------------------------------->*/
 
 #download {
+  position: relative;
+  margin-left: 33%;
   animation-duration: 10s;
   animation-iteration-count: infinite; 
   animation-name: rainbow; 
   text-decoration: none;
   font-size: 170%;
+  font-family: fantasy;
 }
 
 
@@ -131,12 +134,13 @@ ul li{
 }
 
 ol li{
-  background: rgba(255 , 229, 229, 0.8);
+  background: rgb(238, 170, 255);
   padding: 1%;
   margin-left: 2%;
+  margin-right: 10%;
   color: darkred;
   font-weight: bold;
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .step-list{
